@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Event Kampus</title>
+    <link rel="stylesheet" href="2. Muhammad Thiansyah Dewa_21552011159.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Pendaftaran Event Kampus</h1>
+    </header>
+
+    <main class="form-container">
+        <form id="formPendaftaran">
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+            <span id="error-nama" class="error"></span>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Masukkan email aktif">
+            <span id="error-email" class="error"></span>
+
+            <label>NIM</label>
+            <input type="text" id="nim" placeholder="Masukkan NIM">
+            <span id="error-nim" class="error"></span>
+
+            <label>No Telepon/Whatsapp</label>
+            <input type="tel" id="nohp" placeholder="Masukkan no tlp/WA">
+            <span id="error-telp" class="error"></span>
+
+            <label>Universitas</label>
+            <select id="universitas">
+                <option value="">-- Pilih Universitas --</option>
+                <option value="UTB">Universitas Teknologi Bandung</option>
+                <option value="ITB">Institut Teknologi Bandung</option>
+                <option value="UGM">Universitas Gadjah Mada</option>
+            </select>
+            <span id="error-univ" class="error"></span>
+
+            <label>Program Studi</label>
+            <select id="prodi">
+                <option value="">-- Pilih Program Studi --</option>
+                <option value="TI">Teknik Industri</option>
+                <option value="TIF">Teknik Informatika</option>
+                <option value="DKV">Desain Komunikasi Visual</option>
+            </select>
+            <span id="error-prodi" class="error"></span>
+
+            <label>
+                <input type="checkbox" id="Setuju"> Saya setuju dengan syarat dan ketentuan
+            </label>
+            <span id="error-check" class="error"></span>
+
+            <button type="submit" id="submitbtn">Kirim</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 - Dibuat oleh Mahasiswa</p>
+    </footer>
+
+    <script src="3. Dewa.js"></script>
+</body>
+</html>
